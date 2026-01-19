@@ -143,7 +143,7 @@ def insert():
 # def login():
 
 #####For background Image
-image2 =Image.open('bg7.jpg')
+image2 =Image.open('assets/bg7.jpg')
 image2 =image2.resize((1600,1200), Image.LANCZOS)
 
 background_image=ImageTk.PhotoImage(image2)
