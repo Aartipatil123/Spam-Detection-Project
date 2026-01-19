@@ -29,7 +29,7 @@ root.geometry("%dx%d+0+0" % (w, h))
 
 
 
-image2 =Image.open('y9.png')
+image2 =Image.open('assets/y9.png')
 image2 =image2.resize((1600,1200), Image.LANCZOS)
 
 background_image=ImageTk.PhotoImage(image2)
@@ -40,35 +40,6 @@ background_label.image = background_image
 
 background_label.place(x=0, y=0)
 
-# img=ImageTk.PhotoImage(Image.open("s2.jpg"))
-
-# img2=ImageTk.PhotoImage(Image.open("s3.png"))
-
-# img3=ImageTk.PhotoImage(Image.open("s4.jpg"))
-
-
-# logo_label=tk.Label()
-# logo_label.place(x=0,y=0)
-
-# x = 1
-
-# # function to change to next image
-# def move():
-# 	global x
-# 	if x == 4:
-# 		x = 1
-# 	if x == 1:
-# 		logo_label.config(image=img)
-# 	elif x == 2:
-# 		logo_label.config(image=img2)
-# 	elif x == 3:
-# 		logo_label.config(image=img3)
-# 	x = x+1
-# 	root.after(2000, move)
-
-# # calling the function
-# move()
-#background_label.place(x=0, y=0)
 
 ###########################################################################################################
 lbl = tk.Label(root, text="Spam Review Detection ", font=('times', 35,' bold '), height=1, width=65,bg="#cccccc",fg="black")
@@ -253,6 +224,7 @@ button3.place(x=25,y=250)
 
 button4 = tk.Button(frame,command=window,text="Exit",bg="#cce6ff",fg="black",width=15,font=("Times New Roman",15,"bold"))
 button4.place(x=25,y=330)
+
 
 
 
