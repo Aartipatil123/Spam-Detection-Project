@@ -30,11 +30,11 @@ class login_system:
         self.n_username = StringVar()
         self.n_password = StringVar()
         
-        self.bg1_icon=ImageTk.PhotoImage(file=r"L.jpg")
+        self.bg1_icon=ImageTk.PhotoImage(file=r"assets/L.jpg")
 
-        self.bg_icon=ImageTk.PhotoImage(file=r"L.jpg")
-        self.user_icon=ImageTk.PhotoImage(file=r"u1.png")
-        self.pass_icon=ImageTk.PhotoImage(file=r"p1.jpg")
+        self.bg_icon=ImageTk.PhotoImage(file=r"assets/L.jpg")
+        self.user_icon=ImageTk.PhotoImage(file=r"assets/u1.png")
+        self.pass_icon=ImageTk.PhotoImage(file=r"assets/p1.jpg")
         
         bg_lbl=Label(self.root,image=self.bg1_icon).pack()
         
@@ -135,12 +135,7 @@ class login_system:
         self.head['text'] = 'Create Account'
         self.crf.pack()
         
-    
-
-        
-     
-        
-        
 root = Tk()
 obj = login_system(root)
+
 root.mainloop()
