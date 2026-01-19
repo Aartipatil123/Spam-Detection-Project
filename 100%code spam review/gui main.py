@@ -1,5 +1,4 @@
 
-
 from tkinter import *
 import tkinter as tk
 
@@ -15,7 +14,7 @@ root=tk.Tk()
 root.title("Spam Review Detection ")
 w,h = root.winfo_screenwidth(),root.winfo_screenheight()
 
-bg = Image.open(r"y9.png")
+bg = Image.open(r"assets/y9.png")
 bg.resize((1200,300),Image.LANCZOS)
 print(w,h)
 bg_img = ImageTk.PhotoImage(bg)
@@ -72,3 +71,4 @@ d2=tk.Button(root,text="About Us",command=AboutUs ,width=9,height=2,bd=0,backgro
 d2.place(x=1250,y=18)
 
 root.mainloop()
+
